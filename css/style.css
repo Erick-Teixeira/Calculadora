@@ -1,0 +1,86 @@
+/*font Open Sans*/@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
+/*reset*/
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;/*tira a marca padrão do navegador ao clicar no botão*/
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;/*peso da fonte*/
+    font-size: 20px;
+}
+/*end reset*/
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 115vh;
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(124,33,111,1) 100%);
+}
+
+input{
+    margin: 2px;
+    border: none;
+    border-radius: 3px;
+}
+
+#visor{
+    text-align: center;
+}
+
+input[type=text]{
+    width: calc(100% - 4px);
+    height: 40px;
+}
+
+input[type=button]{
+    width: 100px;
+    height: 50px;
+    background-color: rgb(51, 46, 42);
+    color: white;
+    cursor: pointer;
+}
+
+input[type=button]:hover{
+    background-color: rgb(20, 19, 18);
+}
+
+input:nth-child(4){
+    
+    background-color: rgb(32, 29, 28);
+}
+
+div#calculadora{
+    box-shadow: 0px 0px 10px black;
+}
+
+div#calculadora div{
+    display: flex;
+}
+
+div#quarta input:nth-child(1){ /*estilizar somente o primeiro input como o comndo nth:child(1)*/
+    background-color: #1d1a29;
+    font-size: 15px;
+}
+
+div#quarta input:nth-child(1), div#calculadora{
+    border-bottom-left-radius: 25px;
+}
+
+div#quarta input:nth-child(1):hover{
+    background-color: #171520;
+}
+
+div#quarta input:nth-child(3){
+    background-color: #0d2124;
+}
+
+div#quarta input:nth-child(3):hover{
+    background-color: #09171a;
+}
+
+div#quarta input:nth-child(4), div#calculadora{
+    border-bottom-right-radius: 25px;
+}
